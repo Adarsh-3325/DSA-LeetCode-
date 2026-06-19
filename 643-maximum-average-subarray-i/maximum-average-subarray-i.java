@@ -9,7 +9,9 @@ class Solution {
         double max = sum;
         for(int i=k;i<nums.length;i++){
             sum += nums[i] -nums[i-k];
-            max = Math.max(max,sum);
+            if(max < sum){
+                max = sum;
+            }
         }
         double ans = max / k;
         return ans;
