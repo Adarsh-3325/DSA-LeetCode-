@@ -7,7 +7,7 @@ class Solution {
             map.put(nums[i],map.getOrDefault(nums[i],0)+1);
         }
 
-        //Set<Integer> num = map.keySet();
+        
         for(Integer a : map.keySet()){
             if(map.get(a) > (nums.length/3)){
                 list.add(a);
