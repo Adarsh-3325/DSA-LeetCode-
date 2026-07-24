@@ -8,10 +8,10 @@ class Solution {
             if(map.containsKey(comp)){
                ans[0] =  map.get(comp);
                 ans[1] = i;
-               // return ans;
+                return ans;
             }
             map.put(nums[i],i);
         }
-        return ans;
+        return new int[]{};
     }
 }
