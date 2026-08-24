@@ -12,6 +12,7 @@ class Solution {
             arr[m+i] = nums2[i];
         }
         Arrays.sort(arr);
+       
 
         int a = m+n;
         if(a % 2 != 0){
